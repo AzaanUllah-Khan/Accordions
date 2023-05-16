@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q & A || Accordion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="accordionBody">
+        <div class="heading">
+            <h2>General Questions</h1>
+        </div>
+        <div class="accordionBoxes">
+            <div class="acc">
+                <div id="q1" class="question">
+                    <h1>About You ?</h1>
+                    <i class="fa-regular fa-square-plus" onclick="var element = document.getElementById('a1');
+                    if (window.getComputedStyle(element).display === 'none') {
+                        var all = document.getElementsByClassName('answer')
+                        for(var i =0; i < all.length; i++){
+                            all[i].style.display = 'none'
+                        }
+                        element.style.display = 'block';
+                    } else {
+                        element.style.display = 'none';
+                        }"></i>
+
+                </div>
+                <div id="a1" class="answer">
+                    My name is Azaan, and I am 14 years old. I am currently in the 9th standard. I am Learning JavaScript and I love Computers 💜
+                </div>
+            </div>
+            <div class="acc">
+                <div id="q2" class="question">
+                    <h1>What you are Studying ?</h1>
+                    <i class="fa-regular fa-square-plus" onclick="var element = document.getElementById('a2');
+                    if (window.getComputedStyle(element).display === 'none') {
+                        var all = document.getElementsByClassName('answer')
+                        for(var i =0; i < all.length; i++){
+                            all[i].style.display = 'none'
+                        }
+                        element.style.display = 'block';
+                    } else {
+                        element.style.display = 'none';
+                        }"></i>
+                </div>
+                <div id="a2" class="answer">
+                    I am learning Web Development which includes -HTML , CSS ,JavaScript ,React Angular and MangoDB
+                </div>
+            </div>
+            <div class="acc">
+                <div id="q3" class="question">
+                    <h1>Life Goals ?</h1>
+                    <i class="fa-regular fa-square-plus" onclick="var element = document.getElementById('a3');
+                    if (window.getComputedStyle(element).display === 'none') {
+                        var all = document.getElementsByClassName('answer')
+                        for(var i =0; i < all.length; i++){
+                            all[i].style.display = 'none'
+                        }
+                        element.style.display = 'block';
+                    } else {
+                        element.style.display = 'none';
+                        }"></i>
+                </div>
+                <div id="a3" class="answer">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis modi impedit odio fuga. Unde amet
+                    officia impedit suscipit dolor inventore repellat cupiditate? Alias, dicta consequuntur aspernatur
+                    obcaecati unde distinctio beatae.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
